@@ -1,0 +1,1 @@
+- How do i permanent create abbreviations for words in my neovim lua config as well as a list of my words that should not be seen as dictionary errors?

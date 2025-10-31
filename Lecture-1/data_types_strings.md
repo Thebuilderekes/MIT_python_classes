@@ -1,0 +1,4 @@
+- Python does not store expressions in memory. It evaluates the expression and stores the result in memory.
+- python expressions follow an object operator expression pattern
+- When you type cast a value from one type another you are creating and storing the result in memory as a new object.
+- you can write comment for the entire block of code but avoid writing comment to one line of code that can be easily understood without the comment
