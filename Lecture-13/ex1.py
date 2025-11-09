@@ -15,10 +15,10 @@ def calculate_monthly_payment(loan_amount, rate, years):
     """
     # 1. Assert that the loan amount is positive
     assert loan_amount > 0, "Loan amount must be a positive value."
-    
+
     # 2. Assert that the rate is within a reasonable range (0% to 100%)
     assert 0 <= rate <= 1.0, "Interest rate must be between 0 and 1 (0% and 100%)."
-    
+
     # 3. Assert that years is an integer
     assert isinstance(years, int), "Years must be an integer."
 
@@ -42,12 +42,13 @@ print(f"Monthly payment (successful): {result_good:.2f}\n")
 # =======================================================
 
 print("--- 2. Using try...except for Graceful Error Handling ---")
-# We use the divide function from calculator.py, which raises a ValueError 
+# We use the divide function from calculator.py, which raises a ValueError
 # when dividing by zero.
 
 numerator = 50
 divisor_list = [5, 2, 'a', 10]
-
+## the different errors used in except it in anticipation
+#that those kinds of error will occur during the program so you would want to catch those
 for divisor in divisor_list:
     try:
         # Tries to execute this block of code
@@ -57,16 +58,11 @@ for divisor in divisor_list:
 
     except ValueError as e:
         # Executes ONLY if a ValueError occurs in the try block
-        print(f"Error Handled: Cannot calculate division.")
+        print("Error Handled: Cannot calculate division.")
         print(f"Details: {e}") # Print the custom message from calculator.py
 
-    except Exception as e:
-        # Catches any OTHER unexpected error (general fallback)
-        print(f"An unexpected error occurred: {e}")
-
-    else:
-        # Executes ONLY if the try block completes successfully (no exception)
-        print("Calculation complete without error.")
+    except TypeError as e:
+        print("cannot divide by divisor provided")
 
     finally:
         # Executes always, regardless of whether an exception occurred or not
@@ -91,6 +87,6 @@ assert ACTUAL_SUM == EXPECTED_SUM, f"expected {EXPECTED_SUM}, but got {ACTUAL_SU
 print(f"Test Assertion Passed: {ACTUAL_SUM} equals {EXPECTED_SUM}")
 
 # Assertion for a string comparison
-city = "ondon"
-assert city.startswith("L"), "City should start with 'L'"
+CITY = "London"
+assert CITY.startswith("L"), "City should start with 'L'"
 print("String assertion passed.")

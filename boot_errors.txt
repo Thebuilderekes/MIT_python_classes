@@ -1,0 +1,42 @@
+[    0.000000] BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x0000000000087fff] usable
+[    0.000000] BIOS-e820: [mem 0x0000000000088000-0x00000000000bffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x00000000e6e0efff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000e6e0f000-0x00000000e787efff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000e787f000-0x00000000e7b7efff] ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x00000000e7b7f000-0x00000000e7bfefff] ACPI data
+[    0.000000] BIOS-e820: [mem 0x00000000e7bff000-0x00000000e7bfffff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000e7c00000-0x00000000e7ffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000f0100000-0x00000000f01fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000f8000000-0x00000000fbffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fec10000-0x00000000fec10fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fed80000-0x00000000fed80fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000ff800000-0x00000000ffffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000100000000-0x0000000111ffffff] usable
+[    0.000000] BIOS-e820: [mem 0x0000000112000000-0x0000000116ffffff] reserved
+[    0.000000] efi: ESRT=0xe71e1098 ACPI 2.0=0xe7bfe014 SMBIOS=0xe71df000 SMBIOS 3.0=0xe71dd000 MEMATTR=0xe4c2b018 MOKvar=0xe71d3000 RNG=0xe7bc9018 
+[    0.000000] SMBIOS 3.0.0 present.
+[    0.000000] DMI: HP HP Laptop 15-bw0xx/8330, BIOS F.40 11/23/2018
+[    0.030509] ACPI: UEFI 0x00000000E7BFD000 000236 (v01 HPQOEM INSYDE   00000001 HP   00040000)
+[    0.030602] ACPI: UEFI 0x00000000E7BE7000 000042 (v01 HPQOEM INSYDE   00000000 HP   00040000)
+[    0.030747] ACPI: Reserving UEFI table memory at [mem 0xe7bfd000-0xe7bfd235]
+[    0.030780] ACPI: Reserving UEFI table memory at [mem 0xe7be7000-0xe7be7041]
+[    0.233902] BIOS may not properly restore RDRAND after suspend, hiding RDRAND via CPUID. Use rdrand=force to reenable.
+[    0.433576] ACPI: [Firmware Bug]: BIOS _OSI(Linux) query ignored
+[    0.510623] ACPI BIOS Error (bug): Could not resolve symbol [\_SB.WLBU._STA.WLVD], AE_NOT_FOUND (20210730/psargs-330)
+[    0.510671] ACPI Error: Aborting method \_SB.WLBU._STA due to previous error (AE_NOT_FOUND) (20210730/psparse-529)
+[    0.513976] acpi PNP0A08:00: FADT indicates ASPM is unsupported, using BIOS configuration
+[    0.592195] ACPI BIOS Error (bug): Could not resolve symbol [\_SB.WLBU._STA.WLVD], AE_NOT_FOUND (20210730/psargs-330)
+[    0.592227] ACPI Error: Aborting method \_SB.WLBU._STA due to previous error (AE_NOT_FOUND) (20210730/psparse-529)
+[    0.678378] ACPI BIOS Error (bug): Could not resolve symbol [\_SB.WLBU._STA.WLVD], AE_NOT_FOUND (20210730/psargs-330)
+[    0.678415] ACPI Error: Aborting method \_SB.WLBU._STA due to previous error (AE_NOT_FOUND) (20210730/psparse-529)
+[    2.034655] integrity: Loading X.509 certificate: UEFI:MokListRT (MOKvar table)
+[    2.036805] acpi_cpufreq: overriding BIOS provided _PSD data
+[    2.037013] RAS: Correctable Errors collector initialized.
+[    3.532800] [drm] BIOS signature incorrect 0 0
+[    3.535356] amdgpu 0000:00:01.0: amdgpu: Fetched VBIOS from ROM BAR
+[    3.535362] amdgpu: ATOM BIOS: 113-C91400-007
+[   14.424900] EXT4-fs (sda2): re-mounted. Opts: errors=remount-ro. Quota mode: none.
+[   21.763939] kvm: disabled by bios
