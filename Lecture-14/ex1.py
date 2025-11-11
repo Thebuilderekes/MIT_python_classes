@@ -15,3 +15,11 @@ d.update({'h': 80})
 print(d.get('g')) # same as print(d['g'])
 
 print(d)
+
+
+
+student = {"name": "Alice", "age": 20, "school": "UCLA", 'DOB': '22-8-1999'}
+student.pop("age")# removes age
+key, value = student.popitem()  # Removes last inserted item
+print(student)
+print(key, value)

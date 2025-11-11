@@ -1,4 +1,7 @@
 def get_grades(d, names):
+    """
+    find the grades in the provided list of students that match the names
+    """
     # grades = []
     # for key in names:
     #     if key in d:
